@@ -77,9 +77,9 @@ class TestRoom < MiniTest::Test
     assert_equal(5, @room.add_entry_fee_to_till())
   end
 
-  def test_deny_entry_due_to_lack_of_cash
-    assert_equal("Sorry, you don't have enough money to pay the entry fee", @room.deny_entry_due_to_lack_of_cash())
-  end
+  # def test_deny_entry_due_to_lack_of_cash
+  #   assert_equal("Sorry, you don't have enough money to pay the entry fee", @room.deny_entry_due_to_lack_of_cash())
+  # end
 
 
 

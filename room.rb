@@ -7,7 +7,6 @@ class Room
     @playlist = []
     @entry_fee = entry_fee
     @entry_till = []
-
   end
 
   def get_room_id
@@ -61,11 +60,11 @@ class Room
     return @entry_till.sum
   end
 
-  def deny_entry_due_to_lack_of_cash ()
-    if @guest.guest_entry_cash >= @entry_fee # not sure on how to call another method from the guest rb file, if it can be done at all....?!
-      return "Sorry, you don't have enough money to pay the entry fee"
-    end
-  end
+  # def deny_entry_due_to_lack_of_cash ()
+  #   if @guest.guest_entry_cash >= @entry_fee # not sure on how to call another method from the guest rb file, if it can be done at all....?!
+  #     return "Sorry, you don't have enough money to pay the entry fee"
+  #   end
+  # end
 
 
 

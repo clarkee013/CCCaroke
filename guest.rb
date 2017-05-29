@@ -1,6 +1,6 @@
 class Guest
 
-  def initialize(first_name, last_name)
+  def initialize(first_name, last_name, entry_cash)
     @first_name = first_name
     @last_name = last_name
   end

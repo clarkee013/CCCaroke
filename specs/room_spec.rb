@@ -68,6 +68,7 @@ class TestRoom < MiniTest::Test
 
   def test_get_entry_till_total
     @room.add_guest_to_room(@guest1)
+    @room.add_entry_fee_to_till
     till_total = @room.get_entry_till_total
     assert_equal(till_total % 5, @room.get_entry_till_total)
   end
